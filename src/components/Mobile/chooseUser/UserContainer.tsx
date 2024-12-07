@@ -1,4 +1,5 @@
 import { Props } from "../../../commonTypes";
+import reset from "../../../assets/reset.svg";
 import UserInfo from "./UserInfo";
 
 const UserContainer = ({ children }: Props) => {
@@ -28,8 +29,12 @@ const UserContainer = ({ children }: Props) => {
         <UserInfo />
         {children}
       </div>
-      <button className="font-blackHanSans w-[18vw] h-[4.5vh] bg-[#F0E6D2] rounded-full border-2 border-[#C8AA6E] text-[9px] text-[#0F2041] flex items-center justify-center font-extrabold mt-7 mb-7">
+      <button className="font-blackHanSans w-[18vw] h-[4.5vh] bg-[#F0E6D2] rounded-full border-2 border-[#C8AA6E] text-[9px] text-[#0F2041] flex items-center justify-center font-extrabold mt-7">
         팀짜기
+      </button>
+      <button className="font-blackHanSans w-[30vw] h-[4.5vh] bg-[#F0E6D2] rounded-full border-2 border-[#C8AA6E] text-[9px] text-[#0F2041] flex items-center justify-center font-extrabold mt-1 mb-7">
+        <img src={reset} className="" />
+        다시돌리기
       </button>
     </>
   );
